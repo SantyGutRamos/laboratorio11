@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Pruebas Js</h1>
-    <button id="Boton1">Script1</button>
-    <script src="script1.js"></script>
-     <button id="Boton2">Script2</button>
-    <script src="Script2.js"></script>
+    <div class="grid"></div>
+    <button onclick="cargarScript('script1.js')">Ejercicio 1</button>
+    <button onclick="cargarScript('script2.js')">Ejercicio 2</button>
+     <button onclick="cargarScript('script3.js')">Ejercicio 3</button>
+    <script>
+    function cargarScript(nombre) {
+      const viejo = document.getElementById("scriptCargado");
+      if (viejo) viejo.remove();
+      const script = document.createElement("script");
+      script.src = nombre;
+      script.id = "scriptCargado";
+      document.body.appendChild(script);
+
+      console.clear();
+      console.log(`Ejecutando: ${nombre}`);
+    }
+  </script>
 </body>
 </html>
