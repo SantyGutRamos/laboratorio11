@@ -2,7 +2,7 @@
 var montoInput = prompt("Ingrese el monto:");
 var monto = parseInt(montoInput);
 
-console.log("--- Entregando $" + monto + " ---");
+console.log("Entregando $"+ monto);
 var cantidad = 0;
 while (monto >= 100) {
     cantidad = cantidad + 1; 
@@ -33,8 +33,8 @@ while (monto >= 10) {
     monto = monto - 10;
 }
 if (cantidad > 0) {
-    alert("Billetes de $10: " + cantidad);
+    alert("Billetes de $10: " +cantidad);
 }
 if (monto > 0) {
-    alert("Sencillo sobrante $" + monto);
+    alert("Sencillo sobrante $" +monto);
 }

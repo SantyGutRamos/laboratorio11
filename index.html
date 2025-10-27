@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Entorno de Pruebas JavaScript</title> 
 </head>
 <body>
     <h1>Pruebas Js</h1>
-    <div class="grid"></div>
+    <div id="contenedor-salida" class="grid"></div> 
+    
     <button onclick="cargarScript('script1.js')">Ejercicio 1</button>
     <button onclick="cargarScript('script2.js')">Ejercicio 2</button>
-     <button onclick="cargarScript('script3.js')">Ejercicio 3</button>
-     <button onclick="cargarScript('script4.js')">Ejercicio 4</button>
-        <button onclick="cargarScript('script5.js')">Ejercicio 5</button>
+    <button onclick="cargarScript('script3.js')">Ejercicio 3</button>
+    <button onclick="cargarScript('script4.js')">Ejercicio 4</button>
+    <button onclick="cargarScript('script5.js')">Ejercicio 5</button>
+    <button onclick="cargarScript('script6.js')">Ejercicio 6</button>
+    <button onclick="cargarScript('script7.js')">Ejercicio 7</button>
+    <button onclick="cargarScript('script8.js')">Ejercicio 8</button>
+    <button onclick="cargarScript('script9.js')">Ejercicio 9</button>
+    <button onclick="cargarScript('script10.js')">Ejercicio 10</button>
+    <button onclick="cargarScript('script11.js')">Ejercicio 11</button>
+    <button onclick="cargarScript('script12.js')">Ejercicio 12</button>
     <script>
     function cargarScript(nombre) {
       const viejo = document.getElementById("scriptCargado");
@@ -26,6 +34,6 @@
       console.clear();
       console.log(`Ejecutando: ${nombre}`);
     }
-  </script>
+    </script>
 </body>
 </html>

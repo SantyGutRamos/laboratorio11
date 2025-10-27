@@ -12,11 +12,9 @@ for (i = 0; i < 5; i++) {
         break;
     }
 }
-
 if (booleanoxd) {
    
     alert("El promedio de los " + i + " números ingresados es: " + promedio);
 } else {
-
-    alert("No se ingresó ningún número válido. Refresca la página.");
+ alert("No se ingresó ningún número válido. Refresca la página.");
 }
